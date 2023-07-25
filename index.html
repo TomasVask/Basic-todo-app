@@ -12,15 +12,20 @@
     <h1>Your Best To-Do Application</h1>
     <section class="newTaskBox">
         <form class="inputForm">
-            <label for="newTask">Enter new task:<span class="required">*</span></label>
-            <input type="textbox" id="newTask" placeholder="Enter new task here" name="newTask" maxlength="160"
-                required>
-            <label for="ddl">Deadline</label>
-            <input type="datetime-local" name="ddl" id="ddl" min="2023-07-25T14:47" max="2024-06-30T16:30">>
-            <input type="submit" value="Add">
+            <div class="taskDescription">
+                <label for="newTask">Enter new task:<span class="required">*</span></label>
+                <input type="textbox" id="newTask" placeholder="Enter new task here" name="newTask" maxlength="160"
+                    required>
+            </div>
+            <div class="deadlineInput">
+                <label for="ddl">Deadline:</label>
+                <input type="datetime-local" name="ddl" id="ddl" min="2023-07-25T14:47" max="2024-06-30T16:30">
+                <input class="addBtn" type="submit" value="Add">
+            </div>
         </form>
         <br>
         <hr>
+        <br>
     </section>
     <section class="toDoSection">
         <label for="sort">Sort By:</label>
