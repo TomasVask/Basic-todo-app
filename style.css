@@ -1,0 +1,68 @@
+.toDoList {
+    list-style: none;
+}
+
+.itemNumber {
+    margin-left: 1em;
+}
+
+.deleteBtn {
+    width: 5em;
+    margin-left: 2em;
+}
+
+.timeLeft {
+    min-width: 25em
+}
+
+li {
+    display: grid;
+    grid-template-columns: auto 5em 1fr 1fr 1fr;
+    margin-top: 0.4em;
+}
+
+.deletePopup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popupContent {
+    width: 20em;
+    height: 10em;
+    border: solid black;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.popBtns {
+    width: 10em;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.striked {
+    text-decoration: line-through;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}
